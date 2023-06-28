@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'myfirst.css' %}">
+<body>
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+</body>
+</html>

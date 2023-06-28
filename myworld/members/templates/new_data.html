@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+ <form method="post" action="{% url 'new_data' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+ </form>
+    
+</body>
+</html>    
